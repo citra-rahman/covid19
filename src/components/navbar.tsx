@@ -19,7 +19,7 @@ export default function Navbar() {
                 <a className="" href="/">
                     <div className="flex">
                         <Image
-                            src="/logo.png"
+                            src="/Logo.svg"
                             alt="logo"
                             height={150}
                             width={300}
