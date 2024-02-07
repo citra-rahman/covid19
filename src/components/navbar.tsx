@@ -15,7 +15,7 @@ export default function Navbar() {
     }
     return (
         <div className="w-full h-full flex flex-row justify-start gap-2 items-center">
-            <div className="w-[300px] px-8">
+            <div className="w-[20vw] min-w-[20vw] px-[2vw]">
                 <a className="" href="/">
                     <div className="flex">
                         <Image

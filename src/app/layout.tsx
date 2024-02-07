@@ -23,11 +23,11 @@ export default function RootLayout({
       </head>
       <body className={arimo.className}>
         <div className="flex h-screen overflow-hidden">
-          <nav className="fixed w-full h-16 z-30 px-[2vw] py[2vw] bg-[#f4f7f7]">
+          <nav className="fixed w-full h-[10vh] z-35 m-[2vh]">
             <Navbar />
           </nav>
-          <div className="flex flex-1 flex-col pt-16">
-            <main className="flex-1 overflow-y-auto border-l bg-[#f4f7f7]">
+          <div className="flex flex-1 flex-col pt-[12vh]">
+            <main className="flex-1 overflow-y-auto border-l">
               {children}
             </main>
             <Toaster />

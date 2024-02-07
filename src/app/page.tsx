@@ -1,23 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import ItemCard from "@/components/item-card";
-
-const cardData = [
-  {
-    name: "Air Transmission",
-    description: "Objectively evolve tactical expertise before extensible initiatives. Efficiently simplify",
-    imgPath: "./air_transmission.svg"
-  },
-  {
-    name: "Human Contacts",
-    description: "Washing your hands is one of the simplest ways you can protect",
-    imgPath: "./human_contacts.svg"
-  }, {
-    name: "Containted Objects",
-    description: "Use the tissue while sneezing, In this way, you can protect your droplets. ",
-    imgPath: "./containted_object.svg"
-  }
-]
+import { cardData, preventData } from "@/data";
 
 export default function Home() {
   return (
@@ -113,13 +97,70 @@ export default function Home() {
           </span>
         </div>
         <Image
-            alt="symptoms"
-            src="./symptoms.svg"
-            loading="lazy"
-            width={800}
-            height={800}
-            className="m-auto px-10"
-          />
+          alt="symptoms"
+          src="./symptoms.svg"
+          loading="lazy"
+          width={800}
+          height={800}
+          className="m-auto px-10"
+        />
+      </section>
+      <section id="prevention" className="flex flex-col justify-center item-center pt-8">
+        <span className="text-center text-bold text-[#FB4C47] text-[2vw]">Covid-19</span>
+        <span className="text-center text-bold text-[2.4vw] pt-1">What Should We Do</span>
+        <div className="flex flex-col justify-center pt-2">
+          <span className="text-center text-bold text-[1vw]">
+            Corona viruses are a type of virus. There are many different kinds, and some cause
+          </span>
+          <span className="text-center text-bold text-[1vw]">
+            disease. A newly identified type has caused
+          </span>
+          {
+            preventData.map((data, index) =>
+              ((index % 2) === 1) ? <div key={index} className="flex flex-row justify-center item-center pt-8">
+                <div className="flex flex-row justify-start m-auto">
+                  <div className="mt-2">
+                    <span className="text-red-400 text-[2vw] text-center bg-red-100 rounded-full w-[4vw] h-[4vw] p-[1vw]">{data.id}</span>
+                  </div>
+                  <div className="flex flex-col m-2">
+                    <span className="text-[2.2vw]">{data.name}</span>
+                    <span className="max-w-[25vw] text-[1vw] pt-[1vh]">{data.description}</span>
+                  </div>
+                </div>
+                <div className="max-w-[50vw] px-[6vw]">
+                  <Image
+                    alt={data.name}
+                    loading="lazy"
+                    src={String(data.imgPath)}
+                    width={500}
+                    height={500}
+                    className="m-auto"
+                  />
+                </div>
+              </div> :
+                <div key={index} className="flex flex-row justify-center item-center pt-8">
+                  <div className="max-w-[50vw] px-[6vw]">
+                    <Image
+                      alt={data.name}
+                      loading="lazy"
+                      src={String(data.imgPath)}
+                      width={500}
+                      height={500}
+                    />
+                  </div>
+                  <div className="flex flex-row justify-start m-auto">
+                    <div className="mt-2">
+                      <span className="text-red-400 text-[2vw] text-center bg-red-100 rounded-full w-[4vw] h-[4vw] p-[1vw]">{data.id}</span>
+                    </div>
+                    <div className="flex flex-col m-2">
+                      <span className="text-[2.2vw]">{data.name}</span>
+                      <span className="max-w-[25vw] text-[1vw] pt-[1vh]">{data.description}</span>
+                    </div>
+                  </div>
+                </div>
+            )
+          }
+        </div>
       </section>
     </div>
   );
