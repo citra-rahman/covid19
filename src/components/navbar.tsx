@@ -1,5 +1,4 @@
 "use client";
-import Link from 'next/link'
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
@@ -27,12 +26,12 @@ export default function Navbar() {
                 {
                     menuList.map((item, index) =>
                         <div key={index} className="flex flex-col items-center py-2">
-                            <Link
+                            <a
                                 id={`${index}`}
                                 key={index}
                                 href={`#${item}`}
                                 className="text-[1.2vw] font-medium hover:text-red-400 focus:text-red-400 w-[8vw]"
-                            >{item}</Link>
+                            >{item}</a>
                         </div>
                     )
                 }
