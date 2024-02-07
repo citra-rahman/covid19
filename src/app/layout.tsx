@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto_Flex } from "next/font/google";
+import { Arimo } from "next/font/google";
 import Navbar from "@/components/navbar";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
-const roboto = Roboto_Flex({ subsets: ["latin"] });
+const arimo = Arimo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Covid-19",
@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/x-icon" href="/logo.png"></link>
       </head>
-      <body className={roboto.className}>
+      <body className={arimo.className}>
         <div className="flex h-screen overflow-hidden">
           <nav className="fixed w-full h-16 z-30 px-[2vw] py[2vw] bg-[#f4f7f7]">
             <Navbar />
