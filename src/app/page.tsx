@@ -71,7 +71,7 @@ export default function Home() {
               Outbreak Of Respiratory Illness Now Called COVID-19.Lauren Sauer, M.S.,
               The Director Of Operations With The Johns Hopkins Office Of Critical Event
               Preparedness And Response</p>
-            <div className="pt-4 ">
+            <div className="pt-4">
               <Button
                 variant={"default"}
                 className="rounded-full text-[1.2vw] text-red-400 bg-red-100"
@@ -83,10 +83,10 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center item-center">
           <span className="text-center text-bold text-[#FB4C47] text-[2vw]">Covid-19</span>
-          <span className="text-center text-bold text-[2.4vw] pt-2">Contagion</span>
+          <span className="text-center text-bold text-[2.4vw] pt-1">Contagion</span>
           <div className="flex flex-col justify-center pt-2">
-            <span className="text-center text-bold text-[1.6vw]">Corona viruses are a type of virus.</span>
-            <span className="text-center text-bold text-[1.6vw] pt-[1vh]">There are many different kinds, and some cause disease. A newly identified type</span>
+            <span className="text-center text-bold text-[1vw]">Corona viruses are a type of virus.</span>
+            <span className="text-center text-bold text-[1vw]">There are many different kinds, and some cause disease. A newly identified type</span>
           </div>
           <div className="flex flex-row justify-center item-center pt-10">
             {
@@ -100,6 +100,26 @@ export default function Home() {
             }
           </div>
         </div>
+      </section>
+      <section id="symptoms" className="flex flex-col justify-center item-center pt-8">
+        <span className="text-center text-bold text-[#FB4C47] text-[2vw]">Covid-19</span>
+        <span className="text-center text-bold text-[2.4vw] pt-1">Symptoms</span>
+        <div className="flex flex-col justify-center pt-2">
+          <span className="text-center text-bold text-[1vw]">
+            Corona viruses are a type of virus. There are many different kinds, and some cause disease.
+          </span>
+          <span className="text-center text-bold text-[1vw]">
+            A newly identified type has caused a recent outbreak of respiratory
+          </span>
+        </div>
+        <Image
+            alt="symptoms"
+            src="./symptoms.svg"
+            loading="lazy"
+            width={800}
+            height={800}
+            className="m-auto px-10"
+          />
       </section>
     </div>
   );
