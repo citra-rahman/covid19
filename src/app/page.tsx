@@ -6,7 +6,7 @@ import { cardData, preventData } from "@/data";
 export default function Home() {
   return (
     <div>
-      <section id="overview" className="flex flex-row justify-center">
+      <section id="Overview" className="flex flex-row justify-center">
         <div className="flex flex-col gap-2 flex-nowrap justify-center min-w-[45vw] pl-[5vw]">
           <div>
             <span className="text-[2.5vw] text-red-400 font-bold">COVID-19 Alert</span>
@@ -37,7 +37,7 @@ export default function Home() {
             height={2000} />
         </div>
       </section>
-      <section id="contagion" className="flex flex-col justify-center pt-8">
+      <section id="Contagion" className="flex flex-col justify-center pt-8">
         <div className="flex flex-row justify-start item-start">
           <div className="min-w-[55vw]">
             <Image
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="symptoms" className="flex flex-col justify-center item-center pt-8">
+      <section id="Symptoms" className="flex flex-col justify-center item-center pt-8">
         <span className="text-center text-bold text-[#FB4C47] text-[2vw]">Covid-19</span>
         <span className="text-center text-bold text-[2.4vw] pt-1">Symptoms</span>
         <div className="flex flex-col justify-center pt-2">
@@ -105,7 +105,7 @@ export default function Home() {
           className="m-auto px-10"
         />
       </section>
-      <section id="prevention" className="flex flex-col justify-center item-center pt-8">
+      <section id="Prevention" className="flex flex-col justify-center item-center pt-8">
         <span className="text-center text-bold text-[#FB4C47] text-[2vw]">Covid-19</span>
         <span className="text-center text-bold text-[2.4vw] pt-1">What Should We Do</span>
         <div className="flex flex-col justify-center pt-2">
