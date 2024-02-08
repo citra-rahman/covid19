@@ -169,7 +169,7 @@ export default function Home() {
         <WorldMap
           data={worldData}
           width="80vw"
-          height="50vh" />
+          height="70vh" />
       </section>
       <section id="contact" className="flex flex-col justify-center item-center pt-8">
         <span className="text-center text-[2.8vw] font-bold">Have Questions in Mind?</span>
@@ -180,7 +180,7 @@ export default function Home() {
       </section>
       <section id="footer" className="flex flex-col justify-center item-center pt-8 px-[8vw]">
         <FooterNavBar />
-        <span className="text-center text-[1vw] pl-[8vw]">{new Date(Date.now()).getFullYear()} @alright reserved by pixelspark.co</span>
+        <span className="text-center text-[1vw] pl-[8vw] pb-[2vh]">{new Date(Date.now()).getFullYear()} @alright reserved by pixelspark.co</span>
       </section>
     </div>
   );
