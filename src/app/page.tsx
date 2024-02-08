@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import ItemCard from "@/components/item-card";
-import { cardData, preventData } from "@/data";
+import { cardData, preventData, worldData } from "@/data";
+import WorldMap from "@/components/world-map";
 
 export default function Home() {
   return (
@@ -161,6 +162,12 @@ export default function Home() {
             )
           }
         </div>
+      </section>
+      <section id="Reports">
+        <WorldMap
+          data={worldData}
+          width="100vw"
+          height="50vh" />
       </section>
     </div>
   );
