@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import ItemCard from "@/components/item-card";
 import { cardData, preventData, worldData } from "@/data";
 import WorldMap from "@/components/world-map";
+import ContactForm from "@/components/contact-form";
+import FooterNavBar from "@/components/footer-navbar";
 
 export default function Home() {
   return (
@@ -23,7 +25,7 @@ export default function Home() {
           <div>
             <Button
               variant={"default"}
-              className="p-6 rounded-full text-white text-[1.2vw] bg-[#FB4C47]"
+              className="rounded-full text-white text-[1.2vw] bg-[#FB4C47]"
             >
               Let Us Help
             </Button>
@@ -163,11 +165,22 @@ export default function Home() {
           }
         </div>
       </section>
-      <section id="Reports">
+      <section id="Reports" className="flex flex-row justify-center item-center">
         <WorldMap
           data={worldData}
-          width="100vw"
+          width="80vw"
           height="50vh" />
+      </section>
+      <section id="contact" className="flex flex-col justify-center item-center pt-8">
+        <span className="text-center text-[2.8vw] font-bold">Have Questions in Mind?</span>
+        <span className="text-center text-[2.8vw] font-bold leading-sm">Let us Help you</span>
+        <div className="pt-[2vh] m-auto">
+          <ContactForm />
+        </div>
+      </section>
+      <section id="footer" className="flex flex-col justify-center item-center pt-8 px-[8vw]">
+        <FooterNavBar />
+        <span className="text-center text-[1vw] pl-[8vw]">{new Date(Date.now()).getFullYear()} @alright reserved by pixelspark.co</span>
       </section>
     </div>
   );

@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { menuList } from "@/data";
 
-const menuList = [
-    "Overview", "Contagion", "Symptoms", "Prevention"
-]
 export default function Navbar() {
 
     return (
@@ -37,9 +35,10 @@ export default function Navbar() {
                 }
                 <Button
                     variant={"outline"}
-                    className="p-4 border-2 border-red-400 rounded-full hover:bg-red-400"
+                    size={"default"}
+                    className=" border-red-400 rounded-full text-red-400 text-[1.2vw] hover:bg-red-400 hover:text-white"
                 >
-                    <span className="text-red-400 text-[1.2vw] hover:text-white">Contact</span>
+                    Contact
                 </Button>
             </div>
         </div>

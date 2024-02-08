@@ -1,4 +1,8 @@
-const cardData = [
+export const menuList = [
+  "Overview", "Contagion", "Symptoms", "Prevention"
+];
+
+export const cardData = [
   {
     name: "Air Transmission",
     description:
@@ -19,7 +23,7 @@ const cardData = [
   },
 ];
 
-const preventData = [
+export const preventData = [
   {
     id: "01",
     name: "Wear Masks",
@@ -49,6 +53,7 @@ const preventData = [
       "Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic",
   },
 ];
+
 export const mapOptions = {
   colorAxis: { colors: ["#F44A45", "#b20000"] },
   backgroundColor: "fff8f8",
@@ -74,4 +79,3 @@ export const worldData = [
   ["Argentina", 9394326],
   ["Australia", 8291399]
 ];
-export { cardData, preventData };
