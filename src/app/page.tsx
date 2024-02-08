@@ -172,8 +172,8 @@ export default function Home() {
           height="70vh" />
       </section>
       <section id="contact" className="flex flex-col justify-center item-center pt-8">
-        <span className="text-center text-[2.8vw] font-bold">Have Questions in Mind?</span>
-        <span className="text-center text-[2.8vw] font-bold leading-sm">Let us Help you</span>
+        <span className="text-center text-[2.4vw] font-bold">Have Questions in Mind?</span>
+        <span className="text-center text-[2.4vw] font-bold leading-sm">Let us Help you</span>
         <div className="pt-[2vh] m-auto">
           <ContactForm />
         </div>
