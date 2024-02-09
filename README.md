@@ -1,9 +1,9 @@
 # Covid-19 App
-This is a responsive web application of Covid-19 to increase awareness of corona virus. The design was made by [Shamima-Nasrin](https://www.uistore.design/items/covid-19-landing-page-for-figma/) and I only made the app to practice my skills of NextJs, HTML, CSS and responsive web application.
+This is a responsive website of Covid-19 to increase awareness of corona virus. The design was made by [Shamima-Nasrin](https://www.uistore.design/items/covid-19-landing-page-for-figma/) and I only made the app to practice my skills of NextJs, HTML, CSS and responsive web.
 
 ## Getting Started
 
-First, run the development server:
+1. First, run the development server:
 
 ```bash
 npm run dev
@@ -14,9 +14,16 @@ pnpm dev
 # or
 bun dev
 ```
+2. Create a new file named `env.local` and copy the content from `example.env.txt` to the file.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology Stack
+- [Yarn](https://yarnpkg.com/) package manager
+- [React](https://react.dev/) library for building user interfaces
+- [Next.js](https://nextjs.org/) framework for React
+- [Tailwind CSS](https://tailwindcss.com/) for styling
+- [shadcn/ui](https://ui.shadcn.com/) for UI components using Radix UI and Tailwind CSS
+- [SQLite](https://github.com/kriasoft/node-sqlite) database
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
