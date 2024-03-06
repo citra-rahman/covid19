@@ -30,7 +30,7 @@ export default function ContactForm() {
         className="flex flex-row flex-no-wrap w-[30vw] px-[2vw] rounded-full bg-white justify-between">
         <input
           type="email"
-          placeholder="your-email@gmail.com"
+          placeholder="your-email@mail.com"
           {...register("email", { required: true })}
           className="text-center text-[1vw] w-[17vw] h-[5vh] my-[2vh]" />
         <button

@@ -27,28 +27,28 @@ export const preventData = [
   {
     id: "01",
     name: "Wear Masks",
-    imgPath: "./mask-girl.svg",
+    imgPath: "/mask-girl.svg",
     description:
       "Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic outside the box thinking. Objectively ",
   },
   {
     id: "02",
     name: "Wash Your Hand",
-    imgPath: "./hands-girl.svg",
+    imgPath: "/hands-girl.svg",
     description:
       "Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic outside the box thinking. Objectively ",
   },
   {
     id: "03",
     name: "Use Nose - Rag",
-    imgPath: "./tissue-girl.svg",
+    imgPath: "/tissue-girl.svg",
     description:
       "Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic outside the box thinking. Objectively ",
   },
   {
     id: "04",
     name: "Avoid Contacts",
-    imgPath: "./hands-off-girl.svg",
+    imgPath: "/hands-off-girl.svg",
     description:
       "Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches via fully tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic",
   },

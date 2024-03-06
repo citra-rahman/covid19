@@ -32,16 +32,16 @@ export default function FooterNavBar() {
             </div>
             <div className="flex justify-center items-center gap-[1em]">
                 <a target="_blank" href="https://www.facebook.com/">
-                    <Image alt={"facebook"} src="./1.svg" width={10} height={10} />
+                    <Image alt={"facebook"} src="/1.svg" width={10} height={10} />
                 </a>
                 <a target="_blank" href="https://www.youtube.com/">
-                    <Image alt={"youtube"} src="./2.svg" width={15} height={15} />
+                    <Image alt={"youtube"} src="/2.svg" width={15} height={15} />
                 </a>
                 <a target="_blank" href="https://www.instagram.com/">
-                    <Image alt={"vimeo"} src="./3.svg" width={15} height={15} />
+                    <Image alt={"vimeo"} src="/3.svg" width={15} height={15} />
                 </a>
                 <a target="_blank" href="https://www.twitter.com/">
-                    <Image alt={"twiiter"} src="./4.svg" width={15} height={15} />
+                    <Image alt={"twiiter"} src="/4.svg" width={15} height={15} />
                 </a>
             </div>
         </div>

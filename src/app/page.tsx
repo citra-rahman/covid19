@@ -45,7 +45,7 @@ export default function Home() {
           <div className="min-w-[55vw]">
             <Image
               alt="contagion1"
-              src="./contagion1.svg"
+              src="/contagion1.svg"
               loading='lazy'
               width={1000}
               height={1000} />
