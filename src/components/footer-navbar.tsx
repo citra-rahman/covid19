@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { menuList } from "@/data";
+import { menuList, mediaSocial } from "@/data";
 
 export default function FooterNavBar() {
     return (
@@ -31,18 +31,13 @@ export default function FooterNavBar() {
                 }
             </div>
             <div className="flex justify-center items-center gap-[1em]">
-                <a target="_blank" href="https://www.facebook.com/">
-                    <Image alt={"facebook"} src="/1.svg" width={10} height={10} />
-                </a>
-                <a target="_blank" href="https://www.youtube.com/">
-                    <Image alt={"youtube"} src="/2.svg" width={15} height={15} />
-                </a>
-                <a target="_blank" href="https://www.instagram.com/">
-                    <Image alt={"vimeo"} src="/3.svg" width={15} height={15} />
-                </a>
-                <a target="_blank" href="https://www.twitter.com/">
-                    <Image alt={"twiiter"} src="/4.svg" width={15} height={15} />
-                </a>
+                {
+                    mediaSocial.map((item, index) =>
+                        <a key={index} target="_blank" href={item.url}>
+                            <Image alt={item.name} src={item.imgPath} width={10} height={10} />
+                        </a>
+                    )
+                }
             </div>
         </div>
     )

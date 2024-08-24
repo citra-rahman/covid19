@@ -2,6 +2,29 @@ export const menuList = [
   "Overview", "Contagion", "Symptoms", "Prevention"
 ];
 
+export const mediaSocial = [
+  {
+    name: "facebook",
+    url: "https://www.facebook.com/",
+    imgPath: "/facebook.svg",
+  },
+  {
+    name: "youtube",
+    url: "https://www.youtube.com/",
+    imgPath: "/youtube.svg",
+  },
+  {
+    name: "vimeo",
+    url: "https://www.vimeo.com/",
+    imgPath: "/vimeo.svg"
+  },
+  {
+    name: "twitter",
+    url: "https://www.twitter.com/",
+    imgPath: "/twitter.svg"
+  }
+];
+
 export const cardData = [
   {
     name: "Air Transmission",
